@@ -1,0 +1,44 @@
+<br><br><br>
+<div class="container">
+    <div class="row">
+      <div class="col-lg-6" >
+        <h3 class="text-center">FORM MAHASISWA</h3>
+      </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="form-group">
+              <label>Name</label>
+              <input type="text" class="form-control" [(ngModel)]="mahasiswa.name" >
+            </div>
+            <div class="form-group">
+                <label>Gender</label>
+                <select class="form-control" [(ngModel)]="mahasiswa.gender">
+                  <option value="M">Male</option>
+                  <option value="F">Female</option>
+                  </select>  
+            </div>
+            <div class="form-group">
+                <label>Religion</label>
+                <select class="form-control" [(ngModel)]="mahasiswa.religion">
+                  <option value="Islam">Islam</option>
+                  <option value="Kristen">Kristen</option>
+                  <option value="Budha">Budha</option>
+                  <option value="Hindu">Hindu</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Address</label>
+                <input type="text" class="form-control" [(ngModel)]="mahasiswa.address">
+              </div>
+              <div class="form-group">
+                <label>Phone</label>
+                <input type="text" class="form-control" [(ngModel)]="mahasiswa.phone">
+              </div>
+              <div class="form-group pull-right">
+                <a (click)="onClickSave()" class="btn btn-primary">Save</a>
+              </div>
+        </div>
+    </div>
+  </div> <!-- /container -->
+  
